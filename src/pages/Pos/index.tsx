@@ -1,7 +1,6 @@
-
 const Pos = () => {
   return (
-    <div>index</div>
+    <div>POS</div>
   )
 }
 

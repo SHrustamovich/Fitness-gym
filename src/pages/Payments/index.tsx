@@ -1,4 +1,3 @@
-
 const Paymnets = () => {
   return (
     <div>Paymnets</div>
