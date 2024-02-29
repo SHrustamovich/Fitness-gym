@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { History, Home, Inventory, Member, Payments, Pos, Products } from "src/pages"
+import { History, Home, Inventory, Member, Payments, Pos, Products } from "../pages/index"
 
 interface IRouter{
   id: number;
@@ -7,7 +7,7 @@ interface IRouter{
   element: ReactNode;
 }
 
-export const Router: IRouter[] = [
+export const routes: IRouter[] = [
     {
         id: 1,
         path: "/",
