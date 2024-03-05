@@ -1,7 +1,7 @@
 
 const Member = () => {
   return (
-    <div>index</div>
+    <div>Member</div>
   )
 }
 

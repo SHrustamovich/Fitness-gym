@@ -1,7 +1,7 @@
 
 const Inventory = () => {
   return (
-    <div>index</div>
+    <div>Inventory</div>
   )
 }
 
