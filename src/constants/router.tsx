@@ -1,13 +1,20 @@
 import { ReactNode } from "react";
-import { History, Home, Inventory, Member, Payments, Pos, Products } from "src/pages"
-
-interface IRouter{
-  id: number;
-  path: string;
-  element: ReactNode;
+import {
+    History,
+    Home,
+    Inventory,
+    Member,
+    Payments,
+    Pos,
+    Products,
+} from "../pages";
+interface IRouter {
+    id: number;
+    path: string;
+    element: ReactNode;
 }
 
-export const Router: IRouter[] = [
+export const router: IRouter[] = [
     {
         id: 1,
         path: "/",
