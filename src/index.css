@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.login::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("./app/authRouters/components/gym.png");
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    .login-card {
+       position: absolute; 
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%,30%);
+    }
+
+    .login__form {
+        align-items: stretch !important;
+    }
+
+    .login__btn {
+        outline: none;
+    }
+
+    .login__input .ant-input {
+    background: #343743
+}
+.ant-input-affix-wrapper {
+    background: #272a30 !important;
+    border: none;
+}
+.login__password .ant-input {
+    background: #343743;
+    padding: 0;
+}
+
+.login__password .ant-input-affix-wrapper {
+    padding: 0;
+}
+
+.login__password > .ant-input-affix-wrapper:focus {
+    border-color: #343743 !important;
+}
+.ant-input-password:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+ .log .ant-form-item-control-input-content {
+    background: #343743 !important;
+    border-radius: 20px;
+}
+.log .ant-input-affix-wrapper {
+    background: #343743 !important;
+    border-radius: 20px;
+}
+.log .ant-input-affix-wrapper:hover {
+    border: none !important;
+} 
+
+.log .ant-input {
+    background: #343743 !important;
+    color: #939393;
+    outline: none;
+}
+
+.login__btnForm .ant-form-item-control-input-content {
+    box-shadow: none !important;
+}
+
+.login__btnForm:hover .ant-btn {
+    color: #fff !important;
+    background-color: #9b74f0 !important;
+    width: 100%;
+}
