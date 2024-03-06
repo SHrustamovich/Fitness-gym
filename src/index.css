@@ -2,35 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 .login::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("./app/authRouters/components/gym.png");
-        height: 100vh;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-        opacity: 0.7;
-    }
-    .login-card {
-       position: absolute; 
-   top: 50%;
-  left: 50%;
-  transform: translate(-50%,30%);
-    }
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("./app/authRouters/components/gym.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+.login-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
 
-    .login__form {
-        align-items: stretch !important;
-    }
+.login__form {
+    align-items: stretch !important;
+}
 
-    .login__btn {
-        outline: none;
-    }
+.login__btn {
+    outline: none;
+}
 
-    .login__input .ant-input {
-    background: #343743
+.login__input .ant-input {
+    background: #343743;
 }
 .ant-input-affix-wrapper {
     background: #272a30 !important;
@@ -53,7 +53,7 @@
     outline: none !important;
 }
 
- .log .ant-form-item-control-input-content {
+.log .ant-form-item-control-input-content {
     background: #343743 !important;
     border-radius: 20px;
 }
@@ -63,7 +63,7 @@
 }
 .log .ant-input-affix-wrapper:hover {
     border: none !important;
-} 
+}
 
 .log .ant-input {
     background: #343743 !important;
@@ -79,4 +79,11 @@
     color: #fff !important;
     background-color: #9b74f0 !important;
     width: 100%;
+}
+.ant-menu-item-selected {
+    background: #9b74f0 !important;
+    color: #fff !important;
+}
+.ant-menu-item {
+    color: #fff !important;
 }

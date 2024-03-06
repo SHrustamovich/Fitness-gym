@@ -1,14 +1,10 @@
-import useAuthentication from "../hooks/useAuth";
+// import useAuthentication from "../hooks/useAuth";
 import AppRouter from "./appRouters";
-import LogIn from "./authRouters";
+// import LogIn from "./authRouters";
 
 const AppPage = () => {
-   const { isLoggedIn } = useAuthentication();
-  return isLoggedIn ? (
-    <AppRouter/>
-  ) : (
-    <LogIn/>
-  )
-}
+    // const { isLoggedIn } = useAuthentication();
+    return <AppRouter />;
+};
 
-export default AppPage
+export default AppPage;
