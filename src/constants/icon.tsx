@@ -30,7 +30,6 @@ export const Icons = {
             </defs>
         </svg>
     ),
-<<<<<<< Updated upstream
     UK: (props: SVGProps<SVGSVGElement>) => (
         <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -97,6 +96,4 @@ export const Icons = {
             </defs>
         </svg>
     ),
-=======
->>>>>>> Stashed changes
 };

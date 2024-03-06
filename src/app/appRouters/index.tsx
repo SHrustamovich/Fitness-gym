@@ -44,7 +44,9 @@ const AppRouter = () => {
                 <Layout
                     style={{ marginLeft: 200 }}
                     className='bg-[#1E1E1E] h-screen'>
-                    <Header style={{ padding: 0 }} className='bg-[#1E1E1E]' />
+                    <Header className='bg-[#1E1E1E] text-white px-4'>
+                        <h1 className=''>Hello</h1>
+                    </Header>
                     <Content
                         style={{
                             margin: "24px 16px 0",
