@@ -87,3 +87,9 @@
 .ant-menu-item {
     color: #fff !important;
 }
+.ant-menu-title-content {
+    color: white !important;
+}
+.ant-menu-item-selected {
+    background: #9b74f0 !important;
+}
