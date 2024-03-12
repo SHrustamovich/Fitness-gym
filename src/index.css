@@ -93,3 +93,12 @@
 .ant-menu-item-selected {
     background: #9b74f0 !important;
 }
+.ant-drawer-header {
+    display: none !important;
+}
+.ant-select-selector {
+    border-radius: 20px !important;
+    background: #272a30 !important;
+    border: none !important;
+    color: #b5b5b5 !important;
+}
