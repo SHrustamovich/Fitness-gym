@@ -51,6 +51,7 @@ const AppRouter = () => {
                         style={{
                             margin: "24px 16px 0",
                             overflow: "initial",
+                            height: "100%",
                         }}
                         className='text-white'>
                         <Suspense fallback={<Lazy />}>
