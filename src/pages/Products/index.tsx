@@ -1,7 +1,12 @@
+import { useSelector } from "react-redux";
 import { Icons } from "../../constants/icon";
-import ProductDrawer from "./drawer";
+import ProductDrawer from "./drawer/drawer";
+import Orders from "./orders/orders";
 
 const Products = () => {
+    const users = useSelector((state) => state.users);
+    console.log(users);
+
     return (
         <div>
             <div className='w-[424px]'>
@@ -17,6 +22,7 @@ const Products = () => {
                 <Icons.filter />
             </div>
             <ProductDrawer />
+            <Orders />
         </div>
     );
 };

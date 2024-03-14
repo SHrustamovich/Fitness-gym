@@ -102,3 +102,22 @@
     border: none !important;
     color: #b5b5b5 !important;
 }
+.ant-table-row {
+    background: #343743 !important;
+    color: #fff !important;
+    border-bottom: none !important;
+}
+.ant-table-cell {
+    font-size: 16px;
+}
+.ant-table-row:hover {
+    background-color: #343743 !important;
+    color: #343743 !important;
+}
+.ant-pagination {
+    display: none !important;
+}
+.ant-btn {
+    background: transparent !important;
+    color: #9b74f0;
+}
