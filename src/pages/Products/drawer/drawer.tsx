@@ -129,7 +129,4 @@ const ProductDrawer = () => {
 };
 
 export default ProductDrawer;
-function addUser(arg0: { id: any; name: string; price: string; discount: string; supplier: string; }): any {
-    throw new Error("Function not implemented.");
-}
 

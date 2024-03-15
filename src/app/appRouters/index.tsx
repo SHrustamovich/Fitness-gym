@@ -43,7 +43,7 @@ const AppRouter = () => {
                 </Sider>
                 <Layout
                     style={{ marginLeft: 200 }}
-                    className='bg-[#1E1E1E] h-screen'>
+                    className='bg-[#1E1E1E] h-[900px]'>
                     <Header className='bg-[#1E1E1E] text-white px-4'>
                         <h1 className=''>Hello</h1>
                     </Header>
@@ -51,7 +51,6 @@ const AppRouter = () => {
                         style={{
                             margin: "24px 16px 0",
                             overflow: "initial",
-                            height: "100%",
                         }}
                         className='text-white'>
                         <Suspense fallback={<Lazy />}>

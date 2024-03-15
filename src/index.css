@@ -109,9 +109,10 @@
 }
 .ant-table-cell {
     font-size: 16px;
+    background: #343743 !important;
+    color: #fff !important;
 }
 .ant-table-row:hover {
-    background-color: #343743 !important;
     color: #343743 !important;
 }
 .ant-pagination {

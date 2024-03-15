@@ -1,7 +1,7 @@
 import { Button, Card, Flex, Table, TableProps, message } from "antd";
 import { IDataSource, dataSource } from "../../../constants/data";
-import { EditOutlined } from "@ant-design/icons";
-import { DeleteOutlined } from "@ant-design/icons";
+import { DeleteFilled, EditFilled } from "@ant-design/icons";
+import ProductsPagination from "./pagination";
 
 const Orders = () => {
     const handlyEdit = () => {
@@ -48,10 +48,10 @@ const Orders = () => {
                 return (
                     <Flex gap={"small"}>
                         <Button onClick={handlyEdit} className='border-none'>
-                            <EditOutlined />
+                            <EditFilled />
                         </Button>
                         <Button onClick={handlyDelete} className='border-none'>
-                            <DeleteOutlined />
+                            <DeleteFilled />
                         </Button>
                     </Flex>
                 );
@@ -65,8 +65,10 @@ const Orders = () => {
                     dataSource={dataSource}
                     columns={column}
                     scroll={{ x: "100%" }}
-                    style={{ background: "#343743" }}></Table>
+                    style={{ background: "#343743" }}
+                />
             </Card>
+            <ProductsPagination />
         </>
     );
 };

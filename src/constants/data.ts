@@ -8,6 +8,14 @@ export interface IDataSource {
 }
 export const dataSource: IDataSource[] = [
     {
+        key: 1,
+        product: "Drinks",
+        name: "Aquafina Bottled Water (0.5L)",
+        price: "$20.5",
+        supplier: "Aquafina",
+        stocks: "8",
+    },
+    {
         key: 2,
         product: "Drinks",
         name: "Aquafina Bottled Water (0.5L)",
@@ -49,7 +57,7 @@ export const dataSource: IDataSource[] = [
     },
     {
         key: 7,
-        product: "Drinks",
+        product: "Food",
         name: "Aquafina Bottled Water (0.5L)",
         price: "$20.5",
         supplier: "Aquafina",
