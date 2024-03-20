@@ -25,7 +25,9 @@ const AppRouter = () => {
                     className='pt-[100px pt-[100px]'>
                     <div className='demo-logo-vertical' />
                     <div className='absolute mt-[-60px] ml-[40px] mb-[43px]'>
-                        <Icons.logo />
+                        <Link to={"/"}>
+                            <Icons.logo />
+                        </Link>
                     </div>
                     <Menu
                         mode='inline'
