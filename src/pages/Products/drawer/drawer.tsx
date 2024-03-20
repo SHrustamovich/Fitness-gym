@@ -2,34 +2,16 @@ import { Drawer, Select } from "antd";
 import { useState } from "react";
 import { Icons } from "../../../constants/icon";
 import { Button } from "@mui/material";
-import { useDispatch, useSelector } from "react-redux";
 
 const ProductDrawer = () => {
     const [open, setOpen] = useState(false);
-    const [name, setName] = useState("");
-    const [price, setPrice] = useState("");
-    const [discount, setDiscount] = useState("");
-    const [supplier, setSupplier] = useState("");
-    const users = useSelector((state) => state.users);
-    const dispatch = useDispatch();
     const showDrawer = () => {
         setOpen(true);
     };
     const onClose = () => {
         setOpen(false);
     };
-    const handleSubmit = (event: { preventDefault: () => void; }) => {
-        event.preventDefault();
-        dispatch(
-            addUser({
-                id: users[users.length - 1].id + 1,
-                name,
-                price,
-                discount,
-                supplier,
-            })
-        );
-    };
+
     return (
         <div>
             <div
@@ -54,7 +36,7 @@ const ProductDrawer = () => {
                     NEW PRODUCT
                 </h1>
                 <div className='mt-[46px]'>
-                    <form onSubmit={handleSubmit}>
+                    <form>
                         <label className='text-[14px]'>Product Type</label>
                         <Select
                             className='w-full rounded-[20px] h-[36px] mt-2 '
@@ -71,7 +53,7 @@ const ProductDrawer = () => {
                             type='text'
                             placeholder='Product Name'
                             className='mt-2 w-full h-[36px] bg-[#272A30] pl-3 rounded-[20px] border-none outline-none'
-                            onChange={(e) => setName(e.target.value)}
+                            
                         />
                     </form>
                     <form className='grid mt-[46px]'>
@@ -80,7 +62,6 @@ const ProductDrawer = () => {
                             type='text'
                             placeholder='Unit Price'
                             className='mt-2 w-full h-[36px] bg-[#272A30] pl-3 rounded-[20px] border-none outline-none'
-                            onChange={(e) => setPrice(e.target.value)}
                         />
                     </form>
                     <form className='grid mt-[46px]'>
@@ -89,7 +70,6 @@ const ProductDrawer = () => {
                             type='text'
                             placeholder='Discount Percentage'
                             className='mt-2 w-full h-[36px] bg-[#272A30] pl-3 rounded-[20px] border-none outline-none'
-                            onChange={(e) => setDiscount(e.target.value)}
                         />
                     </form>
                     <form className='grid mt-[46px]'>
@@ -98,7 +78,6 @@ const ProductDrawer = () => {
                             type='text'
                             placeholder='Supplier'
                             className='mt-2 w-full h-[36px] bg-[#272A30] pl-3 rounded-[20px] border-none outline-none'
-                            onChange={(e) => setSupplier(e.target.value)}
                         />
                     </form>
                     <Button

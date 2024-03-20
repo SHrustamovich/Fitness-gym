@@ -1,11 +1,8 @@
-import { useSelector } from "react-redux";
 import { Icons } from "../../constants/icon";
 import ProductDrawer from "./drawer/drawer";
 import Orders from "./orders/orders";
 
 const Products = () => {
-    const users = useSelector((state) => state.users);
-    console.log(users);
 
     return (
         <div>

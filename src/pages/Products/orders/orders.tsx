@@ -60,7 +60,7 @@ const Orders = () => {
     ];
     return (
         <>
-            <Card className='w-[1210px] mt-[30px] bg-[#343743] border-none ml-auto mr-auto h-auto'>
+            <Card className='w-[1210px] mt-[30px] bg-[#343743] border-none ml-auto mr-auto h-[400px] overflow-scroll'>
                 <Table
                     dataSource={dataSource}
                     columns={column}

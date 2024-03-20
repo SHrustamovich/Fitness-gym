@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 1px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 113, 113);
+    border-radius: 10px;
+    height: 200px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
 .login::before {
     content: "";
     position: absolute;
@@ -121,4 +134,7 @@
 .ant-btn {
     background: transparent !important;
     color: #9b74f0;
+}
+.MuiPagination-ul li {
+    color: #fff !important;
 }
