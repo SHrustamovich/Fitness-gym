@@ -1,12 +1,13 @@
 import { Layout, Menu } from "antd";
 import Sider from "antd/es/layout/Sider";
-import { Content, Header } from "antd/es/layout/layout";
+import { Content } from "antd/es/layout/layout";
 import { Link, Route, Routes } from "react-router-dom";
 import { menuList } from "../../constants/menuList";
 import { Suspense } from "react";
 import { router } from "../../constants/router";
 import Lazy from "../../components/Lazy";
 import { Icons } from "../../constants/icon";
+import Header from "../../pages/header";
 const AppRouter = () => {
     return (
         <div>
@@ -45,13 +46,11 @@ const AppRouter = () => {
                 </Sider>
                 <Layout
                     style={{ marginLeft: 200 }}
-                    className='bg-[#1E1E1E] h-[900px]'>
-                    <Header className='bg-[#1E1E1E] text-white px-4'>
-                        <h1 className=''>Hello</h1>
-                    </Header>
+                    className='bg-[#1E1E1E] h-[737px]'>
+                    <Header />
                     <Content
                         style={{
-                            margin: "24px 16px 0",
+                            margin: "84px 16px 0",
                             overflow: "initial",
                         }}
                         className='text-white'>
