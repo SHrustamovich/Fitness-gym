@@ -137,3 +137,6 @@
 .MuiPagination-ul li {
     color: #fff !important;
 }
+.ant-table-cell {
+    border: none !important;
+}
